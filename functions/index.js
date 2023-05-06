@@ -15,6 +15,7 @@ app.use(express.json())
 app.use(cors())
 
 app.get("/hello", (_, res) => res.send("Hello World!"))
+
 app.get("/furniture", (req, res) => getAllFurniture(req, res))
 app.get("/furniture/:furnitureId", (req, res) => getFurnitureById(req, res))
 
